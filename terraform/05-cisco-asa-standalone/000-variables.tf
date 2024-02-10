@@ -23,7 +23,7 @@ variable "dns_ip" {
   default = ["8.8.8.8", "8.8.4.4"]
 }
 
-#### VM HTTP parameters ####
+#### VM parameters ####
 variable "flavor_asav5" {
   type    = string
   default = "cisco_asav5"

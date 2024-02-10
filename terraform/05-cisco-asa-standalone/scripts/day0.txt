@@ -1,0 +1,15 @@
+! ASA Version
+hostname fw01
+!
+interface management0/0
+nameif management
+security-level 100
+ip address dhcp setroute
+no shutdown
+!
+crypto key generate rsa modulus 2048
+ssh 0 0 management
+ssh version 2
+ssh timeout 30
+ssh key-exchange group dh-group14-sha256
+username admin password r@cksp@ce123 privilege 15
