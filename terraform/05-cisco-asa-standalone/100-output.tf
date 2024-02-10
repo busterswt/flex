@@ -1,3 +1,3 @@
-output "float_ip" {
-  value       = openstack_networking_floatingip_v2.floatip["http-instance-1"].address
+output "server_uuid" {
+  value       = openstack_compute_instance_v2.asav5.id
 }
