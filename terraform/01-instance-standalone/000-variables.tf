@@ -3,7 +3,7 @@
 #### GLANCE
 variable "image" {
   type    = string
-  default = "jammy-raw"
+  default = "Ubuntu-22.04"
 }
 
 #### NEUTRON
@@ -15,7 +15,7 @@ variable "external_network" {
 # UUID of external gateway
 variable "external_gateway" {
   type    = string
-  default = "1692d064-d011-4589-a39d-0e64b15e88da"
+  default = "921421a2-cd3c-4547-bff7-1fe62395df72"
 }
 
 variable "dns_ip" {
@@ -26,7 +26,7 @@ variable "dns_ip" {
 #### VM HTTP parameters ####
 variable "flavor_http" {
   type    = string
-  default = "r2.gp.gen0"
+  default = "m1.small"
 }
 
 variable "network_http" {

@@ -1,5 +1,11 @@
 ## 01-instance-standalone
 
+### Initialize
+
+```
+terraform init
+```
+
 ### Create stack
 
 ```

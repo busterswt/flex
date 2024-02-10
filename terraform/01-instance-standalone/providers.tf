@@ -21,7 +21,7 @@ required_version = ">= 0.14.0"
   required_providers {
     openstack = {
       source  = "terraform-provider-openstack/openstack"
-      version = "~> 1.53.0"
+      version = "1.54.1"
     }
   }
 }
@@ -29,6 +29,7 @@ required_version = ">= 0.14.0"
 # The OpenStack provider is using ~/.config/openstack/clouds.yaml.
 
 provider "openstack" {
-  cloud = "ospcv2-flex"
-  region = "ORD1"
+  cloud = "flex-dfw"
+  region = "DFW3"
+  insecure = true
 }
